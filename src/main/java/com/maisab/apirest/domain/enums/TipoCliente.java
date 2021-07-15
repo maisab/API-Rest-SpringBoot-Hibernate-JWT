@@ -1,4 +1,4 @@
-package com.maisab.cursomc.domain.enums;
+package com.maisab.apirest.domain.enums;
 
 public enum TipoCliente {
 

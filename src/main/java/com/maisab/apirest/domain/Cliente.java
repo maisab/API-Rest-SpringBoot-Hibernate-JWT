@@ -1,4 +1,4 @@
-package com.maisab.cursomc.domain;
+package com.maisab.apirest.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -14,7 +14,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import com.maisab.cursomc.domain.enums.TipoCliente;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.maisab.apirest.domain.enums.TipoCliente;
 
 @Entity
 public class Cliente implements Serializable {
@@ -29,12 +30,16 @@ public class Cliente implements Serializable {
 	private Integer tipoCliente;
 
 	@OneToMany(mappedBy = "cliente")
+	@JsonManagedReference
 	private List<Endereco> enderecos = new ArrayList<>();
-	
+
 	@ElementCollection
-	@CollectionTable(name="TELEFONE")
+	@CollectionTable(name = "TELEFONE")
 	private Set<String> telefones = new HashSet<>();
-		
+
+	public Cliente() {
+	}
+
 	public Cliente(Integer id, String nome, String email, String cpfOuCnjp, TipoCliente tipoCliente) {
 		super();
 		this.id = id;
@@ -83,7 +88,7 @@ public class Cliente implements Serializable {
 	public void setTipoCliente(TipoCliente tipoCliente) {
 		this.tipoCliente = tipoCliente.getCod();
 	}
-	
+
 	public List<Endereco> getEnderecos() {
 		return enderecos;
 	}
@@ -91,7 +96,7 @@ public class Cliente implements Serializable {
 	public void setEnderecos(List<Endereco> enderecos) {
 		this.enderecos = enderecos;
 	}
-	
+
 	public Set<String> getTelefones() {
 		return telefones;
 	}

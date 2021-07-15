@@ -1,13 +1,13 @@
-package com.maisab.cursomc.service;
+package com.maisab.apirest.service;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.maisab.cursomc.domain.Categoria;
-import com.maisab.cursomc.repositories.CategoriaRepository;
-import com.maisab.cursomc.service.exceptions.ObjectNotFoundException;
+import com.maisab.apirest.domain.Categoria;
+import com.maisab.apirest.repositories.CategoriaRepository;
+import com.maisab.apirest.service.exceptions.ObjectNotFoundException;
 
 @Service
 public class CategoriaService {

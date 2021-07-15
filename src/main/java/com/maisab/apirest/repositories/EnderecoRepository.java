@@ -1,8 +1,8 @@
-package com.maisab.cursomc.repositories;
+package com.maisab.apirest.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.maisab.cursomc.domain.Endereco;
+import com.maisab.apirest.domain.Endereco;
 
 public interface EnderecoRepository extends JpaRepository<Endereco, Integer>{
 

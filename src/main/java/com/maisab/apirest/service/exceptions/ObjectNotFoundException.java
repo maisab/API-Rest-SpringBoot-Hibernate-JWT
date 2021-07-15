@@ -1,4 +1,4 @@
-package com.maisab.cursomc.service.exceptions;
+package com.maisab.apirest.service.exceptions;
 
 public class ObjectNotFoundException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

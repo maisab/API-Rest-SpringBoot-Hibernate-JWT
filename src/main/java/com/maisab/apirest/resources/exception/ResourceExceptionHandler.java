@@ -1,4 +1,4 @@
-package com.maisab.cursomc.resources.exception;
+package com.maisab.apirest.resources.exception;
 
 import javax.servlet.http.HttpServlet;
 
@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 
-import com.maisab.cursomc.service.exceptions.ObjectNotFoundException;
+import com.maisab.apirest.service.exceptions.ObjectNotFoundException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {

@@ -1,4 +1,4 @@
-package com.maisab.cursomc.resources.exception;
+package com.maisab.apirest.resources.exception;
 
 import java.io.Serializable;
 

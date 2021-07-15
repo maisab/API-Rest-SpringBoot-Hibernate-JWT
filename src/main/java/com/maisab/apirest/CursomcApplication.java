@@ -1,4 +1,4 @@
-package com.maisab.cursomc;
+package com.maisab.apirest;
 
 import java.util.Arrays;
 
@@ -7,19 +7,19 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.maisab.cursomc.domain.Categoria;
-import com.maisab.cursomc.domain.Cidade;
-import com.maisab.cursomc.domain.Cliente;
-import com.maisab.cursomc.domain.Endereco;
-import com.maisab.cursomc.domain.Estado;
-import com.maisab.cursomc.domain.Produto;
-import com.maisab.cursomc.domain.enums.TipoCliente;
-import com.maisab.cursomc.repositories.CategoriaRepository;
-import com.maisab.cursomc.repositories.CidadeRepository;
-import com.maisab.cursomc.repositories.ClienteRepository;
-import com.maisab.cursomc.repositories.EnderecoRepository;
-import com.maisab.cursomc.repositories.EstadoRepository;
-import com.maisab.cursomc.repositories.ProdutoRepository;
+import com.maisab.apirest.domain.Categoria;
+import com.maisab.apirest.domain.Cidade;
+import com.maisab.apirest.domain.Cliente;
+import com.maisab.apirest.domain.Endereco;
+import com.maisab.apirest.domain.Estado;
+import com.maisab.apirest.domain.Produto;
+import com.maisab.apirest.domain.enums.TipoCliente;
+import com.maisab.apirest.repositories.CategoriaRepository;
+import com.maisab.apirest.repositories.CidadeRepository;
+import com.maisab.apirest.repositories.ClienteRepository;
+import com.maisab.apirest.repositories.EnderecoRepository;
+import com.maisab.apirest.repositories.EstadoRepository;
+import com.maisab.apirest.repositories.ProdutoRepository;
 
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner{
